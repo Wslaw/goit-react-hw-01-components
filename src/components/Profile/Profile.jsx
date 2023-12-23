@@ -12,15 +12,15 @@ const Profile = ({ username, tag, location, avatar, stats }) => (
 
     <ul className={styles.stats}>
       {Object.entries(stats).map(([label, quantity]) => (
-        <li key={label} className={styles.stats+1}>
-          <span className={styles.label}>{label}</span>
+        <li key={label} className={styles.item}>
+          <span className={styles.label}>
+            {label.charAt(0).toUpperCase() + label.slice(1)}
+          </span>
           <span className={styles.quantity}>{quantity}</span>
         </li>
       ))}
     </ul>
   </div>
 );
-
-
 
 export default Profile;
