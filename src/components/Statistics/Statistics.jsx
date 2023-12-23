@@ -7,7 +7,7 @@ const Statistics = ({ title, stats }) => {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setBackgroundColor(getRandomHexColor());
-    }, 200);
+    }, 500);
     return () => clearInterval(intervalId);
   }, []);
 
