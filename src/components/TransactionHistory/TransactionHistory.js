@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './transactionHistory.module.css'
+import styles from './transactionHistory.module.css';
 
 const TransactionHistory = ({ items }) => (
   <table className={styles.transactionHistory}>
@@ -22,6 +22,5 @@ const TransactionHistory = ({ items }) => (
     </tbody>
   </table>
 );
-
 
 export default TransactionHistory;
