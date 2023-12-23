@@ -18,7 +18,7 @@
   background-color: #9ec8e4;
 }
 
-.transaction tbody tr:nth-child(even){
+.transaction tbody tr:nth-child(2n){
     background-color: #d3dadf;
 }
 
