@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './FriendListItem.module.css';
+import styles from './friendListItem.module.css';
 
 const FriendListItem = ({ avatar, name, isOnline }) => (
   <li className={styles.item}>
