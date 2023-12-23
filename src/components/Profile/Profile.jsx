@@ -1,5 +1,7 @@
 import React from 'react';
 import styles from './Profile.module.css';
+// import getRandomHexColorWhite from '../../helpers';
+
 
 const Profile = ({ username, tag, location, avatar, stats }) => (
   <div className={styles.profile}>
@@ -12,7 +14,11 @@ const Profile = ({ username, tag, location, avatar, stats }) => (
 
     <ul className={styles.stats}>
       {Object.entries(stats).map(([label, quantity]) => (
-        <li key={label} className={styles.item}>
+        <li
+          key={label}
+          className={styles.item}
+          // style={{ backgroundColor: getRandomHexColorWhite() }}
+        >
           <span className={styles.label}>
             {label.charAt(0).toUpperCase() + label.slice(1)}
           </span>
